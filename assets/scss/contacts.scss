@@ -1,3 +1,5 @@
+@import "libs/jquery.mCustomScrollbar";
+
 header{
     @media (min-width: 768px) {
         .header-content{
@@ -147,8 +149,9 @@ header{
         .contacts-content{
             ul {
                 width: 22.1%;
+                margin: 0 -3px 7px;
                 li {
-                    margin-bottom: 44px;
+                    margin-bottom: 43px;
                     h5 {
                         font-size: 18px;
                         line-height: 22px;
@@ -172,7 +175,7 @@ header{
 }
 
 .feedback{
-    padding: 21px 0 40px;
+    padding: 21px 0 85px;
     .title{
         margin-bottom: 34px;
         h2{
@@ -193,8 +196,156 @@ header{
             }
         }
     }
-    @media (min-width: 768px) {
-        
+    form{
+        .input{
+            margin-bottom: 24px;
+            input{
+                width: 100%;
+                height: 64px;
+                padding: 0 20px;
+                color: #666666;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 30px;
+                margin-bottom: 22px;
+                border-radius: 32px;
+                letter-spacing: 0.8px;
+                border: 1px solid #999999;
+                transition: all .5s;
+                &:focus{
+                    border: 1px solid #000000;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            input.error{
+                border: 1px solid red;
+            }
+        }
+        .textarea{
+            margin-bottom: 24px;
+            textarea{
+                width: 100%;
+                height: 127px;
+                color: #666666;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 30px;
+                padding: 16px 22px;
+                border-radius: 10px;
+                margin-bottom: 19px;
+                letter-spacing: 0.9px;
+                border: 1px solid #999999;
+                transition: all .5s;
+                &:focus{
+                    border: 1px solid #000000;
+                }
+            }
+            label{
+                cursor: pointer;
+                display: block;
+                color: #848484;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 14px;
+                padding-left: 36px;
+                position: relative;
+                a{
+                    color: #848484;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 14px;
+                    text-decoration: underline;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #00893d;
+                    }
+                }
+                .jcf-checkbox{
+                    top: 0;
+                    left: 0;
+                    width: 14px;
+                    height: 14px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    position: absolute;
+                    border: 1px solid #bebebe;
+                    background-color: #ffffff;
+                    transition: all 0.5s;
+                    span{
+                        top: 50%;
+                        left: 50%;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        position: absolute;
+                        background: #bebebe;
+                        transform: translate(-50%, -50%);
+                        transition: all 0.5s;
+                    }
+                }
+                .jcf-checkbox.jcf-checked{
+                    border: 1px solid #00893d;
+                    span{
+                        background: #00893d;
+                    }
+                }
+            }
+        }
+        .contact-us{
+            border: none;
+            display: table;
+            margin: 0 auto;
+            position: relative;
+            background: transparent;
+            transform: translate(10px, 0);
+            &:hover{
+                i{
+                    background-color: #00893d;
+                    &::before{
+                        color: #ffffff;
+                    }
+                }
+                span{
+                    color: #00893d;
+                    background-color: #ffffff;
+                    box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
+                }
+            }
+            i{
+                top: 50%;
+                left: -18px;
+                width: 44px;
+                height: 44px;
+                display: block;
+                border-radius: 50%;
+                position: absolute;
+                background-color: #ffffff;
+                box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
+                transform: translate(0, -50%);
+                transition: all 0.5s;
+                &::before{
+                    top: 50%;
+                    left: 50%;
+                    font-size: 14px;
+                    color: #00893d;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.5s;
+                }
+            }
+            span{
+                color: #ffffff;
+                font-size: 14px;
+                line-height: 16px;
+                border-radius: 27px;
+                display: inline-block;
+                background-color: #00893d;
+                padding: 19px 83px 19px 63px;
+                transition: all 0.5s;
+            }
+        }
     }
     @media (min-width: 1024px) {
         padding: 22px 0 75px;
@@ -206,12 +357,54 @@ header{
                 line-height: 32px;
             }
         }
+        form {
+            display: flex;
+            position: relative;
+            padding-bottom: 14px;
+            align-items: flex-start;
+            justify-content: space-between;
+            .input{
+                width: 32.6%;
+                margin-bottom: 0;
+            }
+            .textarea{
+                width: 65%;
+                margin-bottom: 0;
+                textarea {
+                    height: 236px;
+                }
+                label {
+                    width: 68%;
+                }
+            }
+            .contact-us{
+                left: 0;
+                bottom: 0;
+                z-index: 4;
+                position: absolute;
+                transform: translate(18px,0);
+                span {
+                    padding: 19px 45px 19px 42px;
+                }
+            }
+        }
     }
     @media (min-width: 1280px) {
         padding: 22px 0 85px;
+        form {
+            .input{
+                width: 24.6%;
+            }
+            .textarea{
+                width: 74%;
+                label {
+                    width: 44%;
+                }
+            }
+        }
     }
     @media (min-width: 1400px) {
-        padding: 22px 0 50px;
+        padding: 22px 0 96px;
         .title{
             margin-bottom: 56px;
             h2 {

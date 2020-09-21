@@ -18,13 +18,19 @@ $(document).ready(function(){
         $('.call-back').fadeIn();
     });
 
+    $('.privacy_js').on('click', function(){
+        $('.privacy-policy').fadeIn();
+    });
+
     $('.close').on('click', function(){
         $('.mobile-menu').fadeOut();
         $('.call-back').fadeOut();
+        $('.privacy-policy').fadeOut();
     });
 
     $('.close-popup').on('click', function(){
         $('.call-back').fadeOut();
+        $('.privacy-policy').fadeOut();
     });
 
 });
