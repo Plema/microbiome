@@ -683,8 +683,10 @@
     @media (min-width: 1024px) {
         padding: 26px 0 35px;
         .title {
-            font-size: 28px;
-            line-height: 32px;
+            h2{
+                font-size: 28px;
+                line-height: 32px;
+            }
         }
         .technology-content{
             display: flex;
@@ -980,8 +982,10 @@
         padding: 26px 0 55px;
         .title {
             z-index: 2;
-            font-size: 28px;
-            line-height: 32px;
+            h2{
+                font-size: 28px;
+                line-height: 32px;
+            }
         }
         .news-slider{
             z-index: 4;

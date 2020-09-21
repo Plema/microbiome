@@ -36,6 +36,10 @@
                         margin-bottom: 17px;
                         display: inline-block;
                         letter-spacing: 0.3px;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: #00883d;
+                        }
                     }
                     ul{
                         li{
@@ -62,6 +66,10 @@
                 line-height: 22px;
                 margin: 0 auto 12px;
                 letter-spacing: 0.45px;
+                transition: all 0.5s;
+                &:hover{
+                    color: #00883d;
+                }
             }
             .contact-us{
                 position: relative;
@@ -187,6 +195,10 @@
             padding-left: 55px;
             letter-spacing: 0.3px;
             display: inline-block;
+            transition: all 0.5s;
+            &:hover{
+                color: #00883d;
+            }
             i{
                 left: 0;
                 top: 50%;
