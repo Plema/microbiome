@@ -157,7 +157,7 @@
                         font-size: 18px;
                         color: #666666;
                         position: absolute;
-                        transform: translate(-50%, -50%);
+                        transform: translate(-50%,-50%);
                         transition: all 0.5s;
                     }
                 }
@@ -335,12 +335,20 @@
         .footer-top {
             nav {
                 width: 550px;
+                ul li {
+                    width: 21%;
+                    margin: 0;
+                }
             }
         }
         .footer-center {
             margin-bottom: 35px;
             .address {
                 width: 550px;
+                margin-left: 10px;
+                li{
+                    width: 47.5%;
+                }
             }
         }
     }
@@ -355,6 +363,11 @@
             }
             nav{
                 margin: 17px 0 0;
+                ul{
+                    li {
+                        width: auto;
+                    }
+                }
             }
             .tel-content {
                 width: 230px;
@@ -370,13 +383,19 @@
                 width: 200px;
                 li{
                     margin: 2px 16px;
+                    a{
+                        i{
+                            transform: translate(-52%,-45%);
+                        }
+                    }
                 }
             }
             .address{
                 width: 640px;
+                margin-left: 25px;
                 transform: translate(28px,-3px);
                 li{
-                    width: 43%;
+                    width: 41%;
                     &:last-child{
                         p{
                             padding-right: 70px;
