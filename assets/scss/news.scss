@@ -34,12 +34,28 @@ header{
             margin-bottom: 46px;
             border: 1px solid #f4f4f4;
             background-color: #ffffff;
+            &:hover{
+                .img{
+                    .img-hover{
+                        opacity: 1;
+                    }
+                }
+            }
             .img{
                 height: 313px;
                 position: relative;
                 margin-bottom: 29px;
                 a{
                     display: none;
+                }
+                .img-hover{
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    transition: all 0.5s;
                 }
             }
             .text{
@@ -135,9 +151,6 @@ header{
                 &:hover{
                     box-shadow: 0 28px 40px rgba(0, 0, 0, 0.11);
                     .img{
-                        &::after{
-                            opacity: 0.77;
-                        }
                         a{
                             opacity: 1;
                         }
@@ -145,19 +158,6 @@ header{
                 }
                 .img{
                     position: relative;
-                    &::after{
-                        content: '';
-                        top: 0;
-                        left: 0;
-                        opacity: 0;
-                        opacity: 0;
-                        z-index: 0;
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-                        background-color: #00893d;
-                        transition: all 0.5s;
-                    }
                     a{
                         top: 50%;
                         left: 50%;
