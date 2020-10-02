@@ -2,7 +2,7 @@
     top: 0;
     right: 0;
     z-index: 10;
-    width: 260px;
+    width: 290px;
     display: none;
     position: fixed;
     padding: 45px 25px;
@@ -45,9 +45,9 @@
                 margin-bottom: 0;
             }
             a{
-                color: #419140;
-                font-size: 13px;
-                font-weight: 400;
+                color: #000000;
+                font-size: 15px;
+                font-weight: 600;
                 line-height: 18px;
                 display: inline-block;
                 letter-spacing: 0.33px;
@@ -57,11 +57,12 @@
                 }
             }
             ul{
-                margin-left: 15px;
                 li{
                     margin: 4px 0;
                     a{
                         opacity: 0.8;
+                        font-size: 13px;
+                        font-weight: 400;
                         color: #000000;
                     }
                 }

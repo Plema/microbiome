@@ -136,6 +136,11 @@
                 }
                 &:last-child{
                     margin-right: 0;
+                    a{
+                        i{
+                            transform: translate(-48%,-49%);
+                        }
+                    }
                 }
                 a{
                     width: 38px;
