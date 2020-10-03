@@ -20,6 +20,26 @@
                 display: inline-block;
             }
         }
+        .download{
+            margin-bottom: 30px;
+            li{
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                a{
+                    width: 124px;
+                    display: inline-block;
+                    transition: all 0.5s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
         nav{
             margin-bottom: 17px;
             ul{
@@ -238,6 +258,19 @@
     }
     @media (min-width: 768px){
         .footer-top {
+            .download{
+                display: flex;
+                justify-content: center;
+                li{
+                    margin: 0 10px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
             nav{
                 text-align: left;
                 ul{
@@ -285,7 +318,19 @@
             align-items: flex-start;
             justify-content: space-between;
             .logo{
-                margin-bottom: 0;
+                margin-bottom: 30px;
+            }
+            .download {
+                width: 148px;
+                flex-direction: column;
+                justify-content: space-between;
+                li{
+                    width: 100%;
+                    margin: 0 0 10px;
+                    a{
+                        width: 100%;
+                    }
+                }
             }
             nav{
                 width: 400px;
