@@ -80,6 +80,24 @@ $(document).ready(function(){
 
     }
 
+    $('.about article').readmore({
+      speed: 500,
+      lessLink: '<a href="#" class="show-more active">Свернуть <i class="icon-arrow"></i></a>',
+      moreLink: '<a href="#" class="show-more">Читать полностью <i class="icon-arrow"></i></a>',
+      collapsedHeight: 465,
+    });
+
+    if($(window).width() >= 768 ){
+
+      $('.about article').readmore({
+        speed: 500,
+        lessLink: '<a href="#" class="show-more active">Свернуть <i class="icon-arrow"></i></a>',
+        moreLink: '<a href="#" class="show-more">Читать полностью <i class="icon-arrow"></i></a>',
+        collapsedHeight: 285,
+      });
+
+  }
+
 });
 
 $(window).resize(function(){

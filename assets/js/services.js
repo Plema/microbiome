@@ -1,16 +1,25 @@
 $(document).ready(function(){
 
     $('.services-slider').slick({
-        rows: 2,
+        dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
         nextArrow: '<button class="slick-arrow next"><i class="icon-next"></i></button>',
-        prevArrow: '<button class="slick-arrow prev"><i class="icon-prev"></i></button>'
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-prev"></i></button>',
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                dots: true,
+                arrows: false
+              }
+            }
+        ]
     });
 
     $('.packages-slider').slick({
-        rows: 2,
+        dots: false,
         slidesToShow: 2,
         slidesToScroll: 1,
         adaptiveHeight: true,
@@ -20,6 +29,8 @@ $(document).ready(function(){
             {
               breakpoint: 768,
               settings: {
+                dots: true,
+                arrows: false,
                 slidesToShow: 1
               }
             }
@@ -57,6 +68,12 @@ $(document).ready(function(){
         }); 
 
     }
+
+    $('.packages_js').on('click', function(){
+        $('.packages-popup').fadeIn();
+    });
+
+    $(".packages-popup .text").mCustomScrollbar();
 
 });
 

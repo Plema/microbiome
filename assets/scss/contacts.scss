@@ -9,7 +9,7 @@ header{
 }
 
 .contacts{
-    padding: 21px 0 40px;
+    padding: 21px 0 27px;
     .title{
         margin-bottom: 31px;
         h2{
@@ -32,10 +32,10 @@ header{
     }
     .contacts-content{
         ul{
-            margin: 0 -2px 52px;
+            margin: 0 -2px;
             li{
-                padding-right: 40px;
-                margin-bottom: 45px;
+                padding-right: 20px;
+                margin-bottom: 44px;
                 &:last-child{
                     margin-bottom: 0;
                 }
@@ -83,35 +83,64 @@ header{
                         position: absolute;
                     }
                 }
-            }
-        }
-        .map{
-            margin: 0 -15px;
-            height: 480px;
-            position: relative;
-            .iframe-map{
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                position: absolute;
+                .download {
+                    padding-left: 61px;
+                    position: relative;
+                    &:hover{
+                        span{
+                            color: #333333;
+                        }
+                    }
+                    i{
+                        left: 0;
+                        top: 50%;
+                        width: 38px;
+                        height: 38px;
+                        position: absolute;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                        box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
+                        transform: translate(0, -50%);
+                        &::before{
+                            top: 50%;
+                            left: 50%;
+                            font-size: 14px;
+                            position: absolute;
+                            transform: translate(-50%,-50%) rotate(90deg);
+                        }
+                    }
+                    span{
+                        padding: 5px 0;
+                        color: #00893d;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 18px;
+                        display: inline-block;
+                        text-decoration: underline;
+                        transition: all 0.5s;
+                    }
+                }
             }
         }
     }
     @media (min-width: 768px) {
         .contacts-content {
             ul {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                -webkit-column-gap: 30px;
+                -moz-column-gap: 30px;
+                column-gap: 30px;
                 li{
                     padding: 0;
+                    margin-bottom: 20px;
                 }
-            }
-            .map{
-                margin: 0;
             }
         }
     }
     @media (min-width: 1024px) {
-        padding: 22px 0 65px;
+        padding: 22px 0 35px;
         .title {
             z-index: 2;
             margin-bottom: 30px;
@@ -121,23 +150,21 @@ header{
             }
         }
         .contacts-content {
-            display: flex;
-            justify-content: space-between;
-            ul{
-                width: 29.4%;
-                margin: 0 -3px 10px;
-            }
-            .map{
-                width: 66%;
-                height: auto;
+            ul {
+                -webkit-column-count: 3;
+                -moz-column-count: 3;
+                column-count: 3;
+                -webkit-column-gap: 50px;
+                -moz-column-gap: 50px;
+                column-gap: 50px;
             }
         }
     }
     @media (min-width: 1280px) {
-        padding: 22px 0 70px;
+        padding: 22px 0 40px;
     }
     @media (min-width: 1400px) {
-        padding: 22px 0 70px;
+        padding: 22px 0 42px;
         .title{
             margin-bottom: 53px;
             h2 {
@@ -148,10 +175,12 @@ header{
         }
         .contacts-content{
             ul {
-                width: 22.1%;
-                margin: 0 -3px 7px;
+                -webkit-column-gap: 35px;
+                -moz-column-gap: 35px;
+                column-gap: 35px;
                 li {
-                    margin-bottom: 43px;
+                    padding-right: 40px;
+                    margin-bottom: 36px;
                     h5 {
                         font-size: 18px;
                         line-height: 22px;
@@ -165,17 +194,20 @@ header{
                         font-size: 18px;
                         line-height: 22px;
                     }
+                    .download {
+                        span {
+                            font-size: 18px;
+                            line-height: 20px;
+                        }
+                    }
                 }
-            }
-            .map {
-                width: 74%;
             }
         }
     }
 }
 
 .feedback{
-    padding: 21px 0 85px;
+    padding: 21px 0 68px;
     .title{
         margin-bottom: 34px;
         h2{

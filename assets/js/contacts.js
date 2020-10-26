@@ -4,10 +4,13 @@ $(document).ready(function(){
 
     $(".privacy-policy .text").mCustomScrollbar();
 
+    if($(window).width() >= 768 ){
+
+        $('.contacts-content li').matchHeight({
+            byRow: false
+        }); 
+
+    }
+
 });
 
-$(window).resize(function(){
-
-    
-
-});

@@ -73,6 +73,83 @@ $(document).ready(function(){
 
     }
 
+    $('.developers-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      nextArrow: '<button class="slick-arrow next"><i class="icon-next"></i></button>',
+      prevArrow: '<button class="slick-arrow prev"><i class="icon-prev"></i></button>',
+      responsive: [
+          {
+            breakpoint: 1280,
+            settings: {
+              dots: false,
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              dots: true,
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              dots: true,
+              slidesToShow: 1
+            }
+          }
+      ]
+    });
+
+    $('.developers-item .text').matchHeight({
+      byRow: false
+    }); 
+
+    $('.testimony-content article').readmore({
+        speed: 500,
+        lessLink: '<a href="#" class="show-more active">Свернуть</a>',
+        moreLink: '<a href="#" class="show-more">Подробнее</a>',
+        collapsedHeight: 265,
+    });
+
+    if($(window).width() >= 768 ){
+
+      $('.testimony-content article').readmore({
+        speed: 500,
+        lessLink: '<a href="#" class="show-more active">Свернуть</a>',
+        moreLink: '<a href="#" class="show-more">Подробнее</a>',
+        collapsedHeight: 95,
+      });
+
+    }
+
+    $('.developers_js').on('click', function(){
+      var popupText = $(this).parents('.developers-item').find('.popup-text').html();
+      $('.developers-popup').fadeIn();
+      $('.developers-content').find('.text').html(popupText);
+    });
+
+    $('.close').on('click', function(){
+        $('.developers-popup').fadeOut();
+    });
+
+    $('.close-popup').on('click', function(){
+      $('.developers-popup').fadeOut();
+    });
+
+    if($(window).width() <= 768 ){
+
+      $('.services-content article').readmore({
+        speed: 500,
+        lessLink: '<a href="#" class="show-more active">Свернуть</a>',
+        moreLink: '<a href="#" class="show-more">Подробнее</a>',
+        collapsedHeight: 365,
+      });
+
+    }
+
 });
 
 $(window).resize(function(){

@@ -26,11 +26,13 @@ $(document).ready(function(){
         $('.mobile-menu').fadeOut();
         $('.call-back').fadeOut();
         $('.privacy-policy').fadeOut();
+        $('.packages-popup').fadeOut();
     });
 
     $('.close-popup').on('click', function(){
         $('.call-back').fadeOut();
         $('.privacy-policy').fadeOut();
+        $('.packages-popup').fadeOut();
     });
 
 });

@@ -7,6 +7,7 @@
     position: fixed;
     padding: 45px 25px;
     background: #ffffff;
+    box-shadow: 0 6px 32px rgba(0,0,0,.18);
     .close{
         top: 24px;
         z-index: 2;
@@ -387,7 +388,34 @@
             nav{
                 display: none;
             }
+            .transfer{
+                width: 44px;
+                height: 44px;
+                display: block;
+                border-radius: 50%;
+                position: relative;
+                background-color: #ffffff;
+                box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
+                &:hover{
+                    span{
+                        color: #00893d;
+                    }
+                }
+                span{
+                    top: 50%;
+                    left: 50%;
+                    color: #000000;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 15px;
+                    position: absolute;
+                    text-transform: uppercase;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.5s;
+                }
+            }
             .contact-us{
+                margin-left: 12px;
                 i{
                     width: 44px;
                     height: 44px;
@@ -414,7 +442,7 @@
                 height: 32px;
                 display: block;
                 cursor: pointer;
-                margin-left: 28px;
+                margin-left: 2px;
                 position: relative;
                 &:hover{
                     &::before{
@@ -468,6 +496,7 @@
         .header-content {
             .menu {
                 .contact-us {
+                    margin-left: 42px;
                     position: relative;
                     &:hover{
                         i{
@@ -514,7 +543,7 @@
             .menu {
                 nav{
                     display: block;
-                    margin-right: 50px;
+                    margin-right: 25px;
                     ul{
                         display: flex;
                         justify-content: flex-start;
@@ -605,7 +634,7 @@
         .header-content {
             .menu {
                 nav {
-                    margin-right: 130px;
+                    margin-right: 100px;
                     ul {
                         li {
                             position: relative;
@@ -639,8 +668,8 @@
             }
             .menu {
                 nav{
-                    margin-right: 175px;
-                    transform: translate(0, -2px);
+                    margin-right: 82px;
+                    transform: translate(0, 1px);
                     ul{
                         li{
                             margin-right: 62px;
@@ -648,6 +677,7 @@
                     }
                 }
                 .contact-us {
+                    margin-left: 50px;
                     i{
                         left: -18px;
                     }
