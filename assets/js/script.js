@@ -27,12 +27,16 @@ $(document).ready(function(){
         $('.call-back').fadeOut();
         $('.privacy-policy').fadeOut();
         $('.packages-popup').fadeOut();
+        $('.video-popup').fadeOut();
+        $('.video-popup iframe').attr('src', '');
     });
 
     $('.close-popup').on('click', function(){
         $('.call-back').fadeOut();
         $('.privacy-policy').fadeOut();
         $('.packages-popup').fadeOut();
+        $('.video-popup').fadeOut();
+        $('.video-popup iframe').attr('src', '');
     });
 
 });

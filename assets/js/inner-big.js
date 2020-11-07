@@ -58,6 +58,15 @@ $(document).ready(function(){
 
     }
 
+    $('.video_js').on('click', function(){
+
+        var video = $(this).data('video');
+        $('.video-popup').fadeIn();
+        $('.video-popup iframe').attr('src', video);
+
+
+    });
+
 });
 
 $(window).resize(function(){
