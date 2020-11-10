@@ -102,6 +102,23 @@ header{
             background: transparent;
         }
     }
+    .next-news{
+        color: #ffffff;
+        display: table;
+        margin: 0 auto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 18px 30px;
+        border-radius: 27px;
+        background: #00893d;
+        border: 1px solid #00893d;
+        transition: all 0.5s;
+        &:hover{
+            color: #00893d;
+            background: transparent;
+        }
+    }
     @media (min-width: 1024px) {
         padding: 22px 0 75px;
         .title {
@@ -136,6 +153,9 @@ header{
             display: flex;
             justify-content: flex-end;
             .next-post{
+                margin: 0;
+            }
+            .next-news{
                 margin: 0;
             }
         }
