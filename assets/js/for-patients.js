@@ -107,23 +107,23 @@ $(document).ready(function(){
       byRow: false
     }); 
 
-    $('.testimony-content article').readmore({
-        speed: 500,
-        lessLink: '<a href="#" class="show-more active">Свернуть</a>',
-        moreLink: '<a href="#" class="show-more">Подробнее</a>',
-        collapsedHeight: 265,
-    });
+    // $('.testimony-content article').readmore({
+    //     speed: 500,
+    //     lessLink: '<a href="#" class="show-more active">Свернуть</a>',
+    //     moreLink: '<a href="#" class="show-more">Подробнее</a>',
+    //     collapsedHeight: 265,
+    // });
 
-    if($(window).width() >= 768 ){
+    // if($(window).width() >= 768 ){
 
-      $('.testimony-content article').readmore({
-        speed: 500,
-        lessLink: '<a href="#" class="show-more active">Свернуть</a>',
-        moreLink: '<a href="#" class="show-more">Подробнее</a>',
-        collapsedHeight: 95,
-      });
+    //   $('.testimony-content article').readmore({
+    //     speed: 500,
+    //     lessLink: '<a href="#" class="show-more active">Свернуть</a>',
+    //     moreLink: '<a href="#" class="show-more">Подробнее</a>',
+    //     collapsedHeight: 95,
+    //   });
 
-    }
+    // }
 
     $('.developers_js').on('click', function(){
       var popupText = $(this).parents('.developers-item').find('.popup-text').html();
