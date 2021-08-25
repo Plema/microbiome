@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Microbiome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/trash.min.css" data-inprogress="">
+</head>
+
+<body>
+  <!-- Header -->
+  <include src="assets/templates/header.html"></include>
+
+  <div class="bread-crumbs">
+    <div class="container">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><span>Корзина</span></li>
+        </ul>
+    </div>
+  </div>
+
+  <!-- Основной контент -->
+  <section class="wrapper">
+    <section class="trash">
+        <div class="container">
+            <div class="title">
+                <h1>Корзина</h1>
+              </div>
+              <div class="content">
+                <div class="current-order">
+                  <h4>Текущий заказ:</h4>
+                  <span>№7754-12</span>
+                </div>
+                <div class="promo">
+                  <p>Что бы получить скидку на предлогаемые услуги введите промокод</p>
+                  <form action="">
+                    <span>Промо код:</span>
+                    <input type="text" name="promo" placeholder="Введите код">
+                    <button type="submit">Применить</button>
+                  </form>
+                </div>
+                <div class="order-items">
+                  <div class="order-items-name">
+                    <span>Заказ №7754-12</span>
+                    <div class="name">
+                      <span>Кол-во.</span>
+                      <span>Стоимость</span>
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="img/order1.png" alt="">
+                    <div class="order-description">
+                      <h3>Биобанк</h3>
+                      <div class="delete">x</div>
+                      <span>6 месяцев</span>
+                      <p>Хранение одного образца биоматериала и аутоштамма</p>
+                    </div>
+                    <div class="order-quantity-cost">
+                      <div class="quantity">
+                        <span>Кол-во.</span>
+                        <div class="quantity-select">
+                          <i class="icon-arrow left"></i>
+                          <input type="text" name="cost" disabled value="1">
+                          <strong>шт.</strong>
+                          <i class="icon-arrow right"></i>
+                        </div>
+                      </div>
+                      <div class="cost">
+                        <span>Стоимость</span>
+                        <div> 
+                          <input type="text" name="cost" disabled value="4 000"> 
+                          <strong>руб.</strong> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="img/order1.png" alt="">
+                    <div class="order-description">
+                      <h3>Биобанк</h3>
+                      <div class="delete">x</div>
+                      <span>6 месяцев</span>
+                      <p>Хранение одного образца биоматериала и аутоштамма</p>
+                    </div>
+                    <div class="order-quantity-cost">
+                      <div class="quantity">
+                        <span>Кол-во.</span>
+                        <div class="quantity-select">
+                          <i class="icon-arrow left"></i>
+                          <input type="text" name="cost" disabled value="1">
+                          <strong>шт.</strong>
+                          <i class="icon-arrow right"></i>
+                        </div>
+                      </div>
+                      <div class="cost">
+                        <span>Стоимость</span>
+                        <div> 
+                          <input type="text" name="cost" disabled value="4 000"> 
+                          <strong>руб.</strong> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="img/order2.png" alt="">
+                    <div class="order-description">
+                      <h3>Терапевт</h3>
+                      <div class="delete">x</div>
+                      <span>Юлия Леонидовна</span>
+                      <p>Краткое описание работы врача.</p>
+                    </div>
+                    <div class="order-quantity-cost">
+                      <div class="callback">
+                        <p>Наш менеджер свяжеться с вами в ближайшее время для уточнения даты приема к врачу</p>
+                      </div>
+                      <div class="cost">
+                        <span>Стоимость</span>
+                        <div> 
+                          <input type="text" name="cost" disabled value="4 000"> 
+                          <strong>руб.</strong> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <div class="all-cost">
+                    <h4>Общая стоимость:</h4>
+                    <div class="cost">
+                      <input type="text" name="all-cost" disabled value="7 000">
+                      <strong>руб.</strong>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <a class="clear" href="javascript:void(0)">Очистить заказ</a>
+                    <a class="make-order" href="javascript:void(0)">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    
+
+  </section>
+
+  <!-- Footer -->
+  <include src="assets/templates/footer.html"></include>
+
+  <!-- Скрипты -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.matchHeight.min.js"></script>
+  <script src="js/readmore.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/trash.min.js"></script>
+
+</body>
+
+</html>
