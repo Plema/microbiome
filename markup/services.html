@@ -70,6 +70,55 @@
     </div>
 </div>
 
+<div class="popup-registration">
+    <span class="bg-popup"></span>
+    <div class="popup-content">
+        <span class="close">+</span>
+        <h4>Регистрация</h4>
+        <form action="">
+            <input type="text" placeholder="Введите имя">
+            <input type="email" placeholder="Ваш e-mail">
+            <input type="password" placeholder="Пароль">
+            <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </form>
+    </div>
+</div>
+
+<div class="popup-sign-up">
+    <span class="bg-popup"></span>
+    <div class="popup-content">
+        <span class="close">+</span>
+        <h4>Вход</h4>
+        <form action="">
+            <input type="email" placeholder="Ваш e-mail">
+            <input type="password" placeholder="Пароль">
+            <button>ВОЙТИ</button>
+        </form>
+        <a href="javascript:void(0)">Забыли пароль?</a>
+        <a href="javascript:void(0)" class="registration">Зарегистрироваться</a>
+    </div>
+</div>
+
+<div class="popup-cookie">
+    <span class="bg-popup"></span>
+    <div class="popup-content">
+        <span class="close">+</span>
+        <p>Мы используем cookie-файлы.
+        Пользуясь сайтом, Вы соглашаетесь с <a href="javascript:void(0)">«политикой конфиденциальности»</a> </p>
+        <button>Принять</button>        
+    </div>
+</div>
+
+<div class="popup-thanks">
+    <span class="bg-popup"></span>
+    <div class="popup-content">
+        <span class="close">+</span>
+        <p>Заявка отправлена.</p>
+        <p>В ближайшее время наш менеджер Вам перезвонит.</p>
+        <button>Закрыть</button>        
+    </div>
+</div>
+
 <div class="privacy-policy">
     <span class="close"></span>
     <div class="privacy-policy-content">
@@ -99,6 +148,16 @@
     </div>
 </div>
 
+<div class="search-panel">
+    <span class="close">+</span>
+    <div class="search-panel-content">
+        <form action="">
+            <input type="text" placeholder="Что вы хотите найти?">
+            <button>Поиск</button>
+        </form>
+    </div>
+</div>
+
 <div class="mobile-menu">
     <span class="close"></span>
     <nav>
@@ -116,18 +175,25 @@
                 <ul>
                     <li><a href="services.html">Услуги</a></li>
                     <li><a href="patients-developers.html">Разработчики технологии</a></li>
+                    <li><a href="javascript:void(0)">Показания</a></li>
                 </ul>
             </li>
             <li><a href="news.html">Новости</a></li>
+            <li><a href="documents.html">Документы</a></li>
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
+        <div class="buttons">
+            <a href="javascript:void(0)" class="search"><i class="icon-search"></i></a>
+            <a href="trash.html" class="trash-btn"><i class="icon-shopping-basket"></i></a>
+            <a href="javascript:void(0)" class="user"><i class="icon-man-user"></i></a>
+        </div>
     </nav>
 </div>
 
 <header class="header">
     <div class="container">
         <div class="header-content">
-            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
             <div class="menu">
                 <nav>
                     <ul>
@@ -147,11 +213,19 @@
                             </ul>
                         </li>
                         <li class="active"><a href="news.html">Новости</a></li>
+                        <li><a href="documents.html">Документы</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
+                        <a href="javascript:void(0)" class="transfer"><span>RU</span></a>
                     </ul>
                 </nav>
                 <a href="javascript:void(0)" class="transfer"><span>RU</span></a>
-                <a href="javascript:void(0)" class="contact-us call_js"><i class="icon-phone"></i><span>Связаться с нами</span></a>
+                <a href="javascript:void(0)" class="contact-us call_js"><i class="icon-phone"></i></a>
+                <div class="buttons">
+                    <a href="javascript:void(0)" class="search"><i class="icon-search"></i></a>
+                    <a href="javascript:void(0)" class="contact-us call_js"><i class="icon-phone"></i></a>
+                    <a href="trash.html" class="trash-btn"><i class="icon-shopping-basket"></i></a>
+                    <a href="javascript:void(0)" class="user"><i class="icon-man-user"></i></a>
+                </div>
                 <span class="open-menu"><span></span></span>
             </div>
         </div>
@@ -184,6 +258,7 @@
                     </div>
                     <p>качественный анализ бактериального состава кишечной микрофлоры. Направлен на выявление дисбиоза.</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="services-item">
                     <div class="item-title">
@@ -192,6 +267,7 @@
                     </div>
                     <p>качественный анализ микрофлоры влагалища. Направлен на выявление дисбиоза.</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="services-item">
                     <div class="item-title">
@@ -201,6 +277,7 @@
                     <p>качественный анализ генного состава бактерий, направленный на выявление патогенной и условно-патогенной 
                         флоры, которая исключается из дальнейшей работы над созданием аутопробиотика</p>
                         <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                        <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="services-item">
                     <div class="item-title">
@@ -210,6 +287,7 @@
                     <p>приготовление продукта на сухой/жидкой основе, в состав которого входят ваши собственные полезные 
                         бактерии. Капсулы/Жидкая среда</p>
                         <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                        <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="services-item">
                     <div class="item-title">
@@ -219,6 +297,7 @@
                     <p>возможность сохранить ваши уникальные бактерии на длительный срок, сократить ожидание при повторном 
                         заказе продукта</p>
                         <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                        <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="services-item">
                     <div class="item-title">
@@ -228,6 +307,7 @@
                     <p>при необходимости, вы можете получить заключение специалиста по результатам анализа микробиоты и 
                         скорректировать питание</p>
                         <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                        <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
             </div>
         </div>
@@ -247,38 +327,45 @@
                         молочных желёз»/«Наследственные нарушения репродуктивной системы», услуги криохранилища 6/12 месяцев, 
                         консультация нутрициолога, генетика, создание аутопробиотика (опция)</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="packages-item">
                     <h3>Мужское здоровье</h3>
                     <p>анализ микробиоты, генетический анализ спецпанели 104, консультация нутрициолога, генетика, услуги 
                         криохранилища 6/12 месяцев, создание аутопробиотика (опция)</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="packages-item">
                     <h3>Родительская забота</h3>
                     <p>анализ микробиоты кишечника, генетический паспорт «Оптимальный», услуги криохранилища 12-24 месяцев</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="packages-item">
                     <h3>Подарок самым близким</h3>
                     <p>анализ микробиоты кишечника (2), создание аутопробиотика (2) , услуги криохранилища 6/12 месяцев (2)</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="packages-item">
                     <h3>Веган</h3>
                     <p>анализ микробиоты кишечника, тест «Микробиом», консультация нутрициолога</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="packages-item">
                     <h3>ЗОЖ</h3>
                     <p>анализ микробиоты, генетический паспорт «Оптимальный»/«Полный», , консультация генетика, нутрициолога, 
                         услуги криохранилища 6 месяцев, создание аутопробиотика (опция)</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
                 <div class="packages-item">
                     <h3>Для каждого</h3>
                     <p>: анализ микробиоты кишечника, создание аутопробиотика, услуги криохранилища 6 месяцев</p>
                     <a class="packages_js" href="javascript:void(0)">Подробнее</a>
+                    <a class="order" href="javascript:void(0)">Заказать</a>
                 </div>
             </div>
         </div>

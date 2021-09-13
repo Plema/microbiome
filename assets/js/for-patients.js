@@ -1,6 +1,24 @@
 $(document).ready(function(){
 
-    $('.creature-slider').slick({
+    $('.reviews-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-next"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-prev"></i></button>',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+        ]
+    });
+
+    if($(window).width() < 1280 ){
+      $('.creature-slider').slick({
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 2,
@@ -27,24 +45,39 @@ $(document).ready(function(){
               }
             }
         ]
-    });
+      });
 
-    $('.reviews-slider').slick({
-        slidesToShow: 2,
+      $('.indication .steps-items').slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
+        dots: true,
+        adaptiveHeight: false,
+        appendArrows: $('.button-container'),
+        appendDots: $('.button-container'),
         nextArrow: '<button class="slick-arrow next"><i class="icon-next"></i></button>',
         prevArrow: '<button class="slick-arrow prev"><i class="icon-prev"></i></button>',
         responsive: [
             {
               breakpoint: 1024,
               settings: {
-                dots: false,
+                
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                adaptiveHeight: true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true
               }
             }
         ]
-    });
+      });
+    }
 
     if($(window).width() <= 768 ){
 
